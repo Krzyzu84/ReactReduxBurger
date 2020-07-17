@@ -1,11 +1,18 @@
 .CheckoutSummary {
-    text-align: center;
-    width: 80%;
-    margin: auto;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
-    .CheckoutSummary {
-        width: 500px;
-    }
+  .CheckoutSummary {
+    width: 500px;
+  }
+}
+
+.CenterBurger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
