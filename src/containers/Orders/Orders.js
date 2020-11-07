@@ -6,6 +6,7 @@ import axios from '../../axios-orders';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 import Spinner from '../../components/UI/Spinner/Spinner';
+import classes from './Orders.css';
 
 class Orders extends Component {
     componentDidMount () {
@@ -23,7 +24,7 @@ class Orders extends Component {
             ) )
         }
         return (
-            <div>
+            <div className={classes.Orders}>
                 {orders}
             </div>
         );
