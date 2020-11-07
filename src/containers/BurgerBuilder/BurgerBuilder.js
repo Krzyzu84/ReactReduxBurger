@@ -10,11 +10,9 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import * as actions from "../../store/actions/index";
 import axios from "../../axios-orders";
 
+
 class BurgerBuilder extends Component {
-  // constructor(props) {
-  //     super(props);
-  //     this.state = {...}
-  // }
+
   state = {
     purchasing: false,
   };
@@ -66,6 +64,7 @@ class BurgerBuilder extends Component {
       burger = (
         <div>
           <Burger ingredients={this.props.ings} />
+          
           <BuildControls
             ingredientAdded={this.props.onIngredientAdded}
             ingredientRemoved={this.props.onIngredientRemoved}
